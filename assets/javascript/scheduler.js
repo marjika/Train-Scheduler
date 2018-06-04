@@ -87,17 +87,6 @@
         newFrequency.text(snapshot.val().frequencyInput);
         newArrival.text(arrivalTime(snapshot.val().firstTrainTime, snapshot.val().frequencyInput));
         newMinAway.text(timeUntil);
-        // if (isNaN(timeUntil)) {
-        //     inputCorrection();
-        //     var childFile = dataRef.ref('Trains').orderByChild("dateAdded").limitToLast(1);
-        //     console.log(childFile);
-        //     childFile.delete().then(function() {
-        //         // File deleted successfully
-        //       }).catch(function(error) {
-        //         // Uh-oh, an error occurred!
-        //       });
-        // }
-
         newRow.append(newTrain, newDestination, newFrequency, newArrival, newMinAway);
         $("#table-body").append(newRow);
     }, function(errorObject) {

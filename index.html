@@ -25,52 +25,45 @@
 
 <body>
 
-        <div class="container">
+    <div class="container">
 
-                <br>
+    <br>
             
-                <!-- Jumbotron Title -->
-                <div class="jumbotron" style="background-color: steelblue; color: lightcyan;">
-                  <h1 class="text-center">Grownups Playing With Trains</h1>
-                  <h3 class="text-center">Find out when <u>your</u> train comes in!</h3>
-                </div>
+        <div class="jumbotron" style="background-color: steelblue; color: lightcyan;">
+            <h1 class="text-center">Grownups Playing With Trains</h1>
+            <h3 class="text-center">Find out when <u>your</u> train comes in!</h3>
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                                <h4 id="correction"></h4>
-                                <img src="assets/images/Oops-Speech-Bubble-Png.png" alt="Oops" style="height: 200px; width: auto;">
-                            </div>
-                        </div>
-                            
-                        <div class="card">
-                            <div class="card-body"> 
-                                <h4 style="background-color: steelblue;">Current Train Schedule</h4>
-                                 
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Train name</th>
-                                                <th>Destination</th>
-                                                <th>Frequency (min)</th>
-                                                <th>Next Arrival</th>
-                                                <th>Minutes Away</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="table-body"></tbody>
-                                    </table>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <h4 id="correction"></h4>
+                        <img src="assets/images/Oops-Speech-Bubble-Png.png" alt="Oops" style="height: 200px; width: auto;">
+                    </div>
+                </div>                    
+                <div class="card">
+                    <div class="card-body"> 
+                        <h4 style="background-color: steelblue;">Current Train Schedule</h4>                                 
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Train name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body"></tbody>
+                        </table>
                     </div>
                 </div>
-                    <br>
-                <div class="row">
-                    <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 style="background-color: steelblue;">Add your Train</h4>    
-                    
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 style="background-color: steelblue;">Add your Train</h4>                
                         <form id="inputInfo">
                             <div class="form-group">
                                 <label for="tName">Train Name</label>
@@ -89,23 +82,15 @@
                                 <input type="number" class="form-control" id="frequency-input" placeholder="Please enter a number">
                             </div>
                             <button type="submit" class="btn btn-default" id="submit-button" style="background-color: steelblue; color: lightcyan;">Submit</button>
-                          </form>
-                          </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <br>
-
-
-
-
-
+            </div>
+        </div>
+        <br>
+    </div>
 
     <script type="text/javascript" src="assets/javascript/scheduler.js"></script>
 </body>
-
-
-
-
 
 </html>
